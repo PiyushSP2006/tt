@@ -17,7 +17,7 @@ getDays();
 
 
 async function getDays(){
-    day=await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    day=await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
     dayName= await day.json();
     
     DAY=dayName.day_of_week;
